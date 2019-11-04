@@ -1,0 +1,40 @@
+.about__logo {
+  color: #fff;
+  text-align: center;
+  margin: 6rem 0;
+}
+
+.about-body {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto; 
+
+  & .about__img {
+    width: 30%;
+    height: auto;
+
+    & img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  & .about__paragraph {
+    // flex: 2;
+    width: 55%;
+
+    & h6 {
+      line-height: 1.4;
+      font-size: 1rem;
+      color:#fff;
+      font-weight: 300;
+      margin: 2rem 0;
+    }
+
+    & p {
+      color: #c9c9c9;
+    }
+  }
+}

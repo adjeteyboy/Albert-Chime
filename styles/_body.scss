@@ -1,0 +1,44 @@
+$mainDark: #15202B;
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: $mainDark;
+}
+
+nav {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-bottom: 6rem;
+  // width: 30rem;
+
+  & li {
+    width: 120px;
+    height: 40px;
+  }
+  
+  & a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height:100%;
+    color: #fff;
+    text-decoration: none;
+
+    &.active {
+      border-bottom: 2px solid #fff;
+    }
+
+    &:hover {
+      background: lighten($mainDark, 2%);
+    }
+  }
+
+}
+
+footer {
+  text-align: center;
+  margin: 6rem 0 40px 0;
+  color:#aeb0b3;
+  font-size: 10px;
+}
